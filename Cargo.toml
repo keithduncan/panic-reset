@@ -1,0 +1,14 @@
+[package]
+name = "panic-reset"
+version = "0.1.0"
+authors = ["Keith Duncan <keith_duncan@me.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = { version = "0.6" }
+
+[patch.crates-io]
+# Requires an unreleased cortex-m version
+cortex-m = { git = "https://github.com/rust-embedded/cortex-m", rev = "0788bd9226831d2748b16d300a212981b61aa7c9" }
